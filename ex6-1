@@ -1,0 +1,9 @@
+#! usr/bin/perl
+
+my %last_name;
+$last_name{"fred"} = "flinstone";
+$last_name{"barney"} = "rubble";
+$last_name{"fred"} = "flinstone";
+print "Enter a name: ";
+chomp(my $name = <STDIN>);
+print "My full name is $name $last_name{$name}.\n"; 

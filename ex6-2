@@ -1,0 +1,9 @@
+my(@string, %strcount, $string);
+chomp(@string = <STDIN>);
+
+foreach $string (@string){
+	$strcount{$string} += 1;
+}
+foreach $string (@string){
+	print "you typed this word:$string $strcount{$string} amount of times.\n";
+}

@@ -1,0 +1,13 @@
+#! usr/bin/perl
+
+die "No file names suppliled!\n" unless @ARGV;
+my $a = shift @ARGV;
+my $b = -M $a;
+
+foreach(@ARGV){
+my $test = -M;
+($a, $b) = ($_, $test)
+	if $test > $b;
+}
+printf "oldest file was %s, and it was %.1f days old.\n",
+	$a, $b;

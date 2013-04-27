@@ -1,0 +1,12 @@
+Script started on Tue Apr  3 23:32:55 2012
+[?1034hbash-3.2$ perl ex9-1 [K[K[K[K[K[K[K[K[K[K[Kcat ex9-1 
+#! usr/bin/perl
+
+my $what = 'fred';
+
+/($what){3}/
+bash-3.2$ perl ex9-1 
+bash-3.2$ exit
+exit
+
+Script done on Tue Apr  3 23:33:10 2012
